@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="js/jquery-1.11.1.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+$(document).ready(function() {
+    $("#hide").click(function(){
+		$("h5").hide();
+		});
+	$("#show").click(function(){
+    $("h5").show();
+  });
+   
+});
+$(document).ready(function() {
+     $("#hx").mouseenter(function() {
+        alert("嗨");
+    });
+	$("#hx").mouseleave(function() {
+        alert("goodbyb!");
+    });
+});
+</script>
+</head>
+<body>
+<p>如果你点我，我就会消失。</p>
+<p>继续点我!</p>
+<p>接着点我!</p>
+<p>再来点我呀！</p>
+
+<h1>我是何烨坪</h1>
+<h5>呜呜~~~~明天要去学校了</h5>
+<button id="hide">隐藏</button>
+<button id="show">显示</button>
+
+
+
+<h3 id="hx" style="width:90px;height:60px;">请看这里</h3>
+</body>
+</html>
+			
